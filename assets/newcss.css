@@ -1176,3 +1176,26 @@ img {
   .skills__close, .hobbies__close, .interests__close {
   height: 0;
 }
+
+  .hobbies__content {
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+  .hobbies__open {
+  height: auto;
+}
+  .hobbies__close {
+  height: 0;
+}
+
+  .interests__content {
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+  .interests__open {
+  height: auto;
+}
+  .interests__close {
+  height: 0;
+}
+
