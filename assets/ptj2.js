@@ -28,11 +28,29 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 const skillsContent = document.getElementsByClassName("skills__content"),
   skillsHeader = document.querySelectorAll(".skills__header");
 
-  function toggleSkills() {
-    this.parentNode.classList.toggle("skills__open");
-    this.parentNode.classList.toggle("skills__close");
-  }
+  document.querySelectorAll('.skills__header').forEach(header => {
+    header.addEventListener('click', function() {
+      let parent = document.getElementById('skills-section');
+      parent.classList.toggle('skills__open');
+      parent.classList.toggle('skills__close');
+    });
+  });
   
+  document.querySelectorAll('.hobbies__header').forEach(header => {
+    header.addEventListener('click', function() {
+      let parent = document.getElementById('hobbies-section');
+      parent.classList.toggle('skills__open');
+      parent.classList.toggle('skills__close');
+    });
+  });
+  
+  document.querySelectorAll('.interests__header').forEach(header => {
+    header.addEventListener('click', function() {
+      let parent = document.getElementById('interests-section');
+      parent.classList.toggle('skills__open');
+      parent.classList.toggle('skills__close');
+    });
+  });
 
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
